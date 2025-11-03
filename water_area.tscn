@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcqcyvowq6avd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11hme"]
+
+[node name="water_area" type="Area2D" groups=["waterArea"]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["waterArea"]]
+shape = SubResource("RectangleShape2D_11hme")
+debug_color = Color(0.937255, 0.6, 0.701961, 0.419608)

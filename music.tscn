@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1v3n7nej8kjc"]
+
+[ext_resource type="AudioStream" uid="uid://uqjl3e0mrx2n" path="res://assets/Introduction History.mp3" id="1_a73ix"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_a73ix")
+autoplay = true

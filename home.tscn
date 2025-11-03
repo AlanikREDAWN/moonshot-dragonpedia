@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://bak0l76r4usvj"]
+
+[ext_resource type="FontFile" uid="uid://bwvvsjxyy6qvm" path="res://assets/OldEnglishGothicPixelRegular-ow2Bo.ttf" id="1_sisqx"]
+[ext_resource type="FontFile" uid="uid://uejhkowjrw4s" path="res://assets/WoodDragon-4BaxY.ttf" id="2_nv38x"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.181
+anchor_right = 0.5
+anchor_bottom = 0.181
+offset_left = -324.5
+offset_top = -0.28801
+offset_right = 324.5
+offset_bottom = 172.712
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_sisqx")
+theme_override_font_sizes/font_size = 125
+text = "Dragonpedia"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -143.0
+offset_top = 2.0
+offset_right = 148.0
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_nv38x")
+theme_override_font_sizes/font_size = 50
+text = "Start"

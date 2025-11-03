@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://1jwgvmrydgvi"]
+
+[ext_resource type="Script" path="res://ice_block.gd" id="1_2jyb2"]
+[ext_resource type="Texture2D" uid="uid://dst1pkok8cvuh" path="res://assets/world_tileset.png" id="1_nb2ea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alff4"]
+atlas = ExtResource("1_nb2ea")
+region = Rect2(63.9886, 160, 16.0114, 16.0176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y51m5"]
+atlas = ExtResource("1_nb2ea")
+region = Rect2(95.962, 31.9131, 16.0127, 16.0996)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdvjs"]
+size = Vector2(18.5714, 18.5714)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6uq6"]
+size = Vector2(16, 16)
+
+[node name="iceBlock" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_2jyb2")
+
+[node name="water" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_alff4")
+
+[node name="ice" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_y51m5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ice"]
+scale = Vector2(0.5, 0.5)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ice/StaticBody2D"]
+position = Vector2(0.25, -2.98023e-08)
+scale = Vector2(1.75, 1.75)
+shape = SubResource("RectangleShape2D_rdvjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_y6uq6")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

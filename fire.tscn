@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxmoy0kp7p4ch"]
+
+[ext_resource type="Texture2D" uid="uid://c7svmkb638cep" path="res://assets/White Square.png" id="1_w8chf"]
+
+[sub_resource type="Gradient" id="Gradient_mm1n5"]
+offsets = PackedFloat32Array(0, 0.364754, 0.680328, 1)
+colors = PackedColorArray(0.945098, 0.486275, 0.0666667, 1, 0.996078, 0.4, 0.00784314, 1, 0.972549, 0.0313726, 0.0313726, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g66oj"]
+gradient = SubResource("Gradient_mm1n5")
+
+[sub_resource type="Curve" id="Curve_jm27f"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.123223, 0.731016), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_cx4jo"]
+curve = SubResource("Curve_jm27f")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_c6ij0"]
+particle_flag_disable_z = true
+angle_min = 1.07288e-05
+angle_max = 360.0
+direction = Vector3(0, -1, 0)
+spread = 10.0
+initial_velocity_min = 270.11
+initial_velocity_max = 270.11
+angular_velocity_min = -222.02
+angular_velocity_max = 571.54
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+scale_min = 0.03
+scale_max = 0.1
+scale_curve = SubResource("CurveTexture_cx4jo")
+color_ramp = SubResource("GradientTexture1D_g66oj")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(581, 462)
+amount = 250
+process_material = SubResource("ParticleProcessMaterial_c6ij0")
+texture = ExtResource("1_w8chf")
+trail_section_subdivisions = 5
