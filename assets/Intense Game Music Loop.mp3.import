@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bs7ifpp14fcu0"
+path="res://.godot/imported/Intense Game Music Loop.mp3-1ade76645cc145507b3fb418777797a6.mp3str"
+
+[deps]
+
+source_file="res://assets/Intense Game Music Loop.mp3"
+dest_files=["res://.godot/imported/Intense Game Music Loop.mp3-1ade76645cc145507b3fb418777797a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

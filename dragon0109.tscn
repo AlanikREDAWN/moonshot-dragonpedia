@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=4 uid="uid://cwklc1y4vlt8b"]
 
 [ext_resource type="PackedScene" uid="uid://c0ysep3u4s68n" path="res://player.tscn" id="1_8qc3k"]
-[ext_resource type="Texture2D" uid="uid://ccrg5myayyi1c" path="res://assets/spritesheet.png" id="1_ax3nr"]
-[ext_resource type="Script" path="res://player.gd" id="3_cxsvw"]
+[ext_resource type="Texture2D" uid="uid://bjilumvd37f1t" path="res://assets/spritesheet.png" id="1_ax3nr"]
+[ext_resource type="Script" uid="uid://y53bnjs6pd8w" path="res://player.gd" id="3_cxsvw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eei8f"]
 texture = ExtResource("1_ax3nr")

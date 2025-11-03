@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://doglc7n4amofe"
+path="res://.godot/imported/Introduction History.mp3-21bfd976ccd92dd5fd08de29d491e110.mp3str"
+
+[deps]
+
+source_file="res://assets/Introduction History.mp3"
+dest_files=["res://.godot/imported/Introduction History.mp3-21bfd976ccd92dd5fd08de29d491e110.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
