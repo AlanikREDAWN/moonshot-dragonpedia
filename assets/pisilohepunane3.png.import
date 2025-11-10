@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cteoip88ebcbj"
-path="res://.godot/imported/0032.png-397a8224f2d492ddd944a61d22bef4ad.ctex"
+uid="uid://f4xj3i5gsa76"
+path="res://.godot/imported/pisilohepunane3.png-2bb8583285d7fbe423567dc7d9cf3dce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/0032.png"
-dest_files=["res://.godot/imported/0032.png-397a8224f2d492ddd944a61d22bef4ad.ctex"]
+source_file="res://assets/pisilohepunane3.png"
+dest_files=["res://.godot/imported/pisilohepunane3.png-2bb8583285d7fbe423567dc7d9cf3dce.ctex"]
 
 [params]
 
